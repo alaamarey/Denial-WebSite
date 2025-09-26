@@ -1,0 +1,24 @@
+@media screen and (min-width: 768px) {
+  #home .home-caption p,
+  #home .home-caption p:after {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #home .home-caption p,
+  #home .home-caption p:after {
+    font-size: 60px;
+  }
+
+  .navbar-nav .nav-link.active::after {
+    content: "";
+    width: 60%;
+    height: 0.125rem;
+    background-color: #000;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translateX(-30%);
+  }
+}

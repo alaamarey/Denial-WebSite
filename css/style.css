@@ -1,0 +1,797 @@
+@font-face {
+  src: url(../fonts/Poppins-Regular.ttf);
+  font-family: Poppins-Regular;
+  font-weight: 400;
+}
+@font-face {
+  src: url(../fonts/Poppins-Bold.ttf);
+  font-family: Poppins-Bold;
+  font-weight: 700;
+}
+@font-face {
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-family: Poppins-SemiBold;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-ExtraLight.ttf);
+  font-family: Montserrat-ExtraLight;
+  font-weight: 200;
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-family: Montserrat-Regular;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-family: Montserrat-Medium;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-family: Montserrat-SemiBold;
+  font-weight: 600;
+}
+
+@font-face {
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-family: Montserrat-Bold;
+  font-weight: 700;
+}
+@font-face {
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+  font-family: Montserrat-ExtraBold;
+  font-weight: 800;
+}
+@font-face {
+  src: url(../fonts/Montserrat-Black.ttf);
+  font-family: Montserrat-Black;
+  font-weight: 900;
+}
+
+body {
+  scroll-behavior: smooth;
+  scroll-padding: 3.5625rem;
+  font-family: Poppins-Regular;
+}
+
+* {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li:not(:has(.nav-link)) {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  margin-left: .625rem;
+}
+ul li a {
+  color: inherit;
+  margin: auto;
+}
+.title {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+.title h2 {
+  position: relative;
+  z-index: 999;
+  font-family: Montserrat-Black;
+  font-size: 2.5rem;
+  color: var(--heading-color);
+}
+.title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --heading-color: rgb(52, 52, 52);
+  --text-color: rgb(153, 153, 153);
+  --description-color: rgb(116, 129, 130);
+  --section-color: #f7f7f7;
+  --nav-link-color: rgb(34, 34, 34);
+  --form-color: #f4f4f4;
+  --bg-footer-color: #1c1c1c;
+  --padding-space: 5rem;
+}
+/* Global Style  */
+
+
+
+/* Strat Navbar  */
+.navbar {
+  background-color: var(--white-color);
+}
+.navbar .navbar-brand {
+  color: inherit;
+  font-family: Montserrat-ExtraBold;
+  font-size: 1.125rem;
+}
+.nav-link {
+  color: var(--black-color);
+  font-size: .875rem;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--black-color);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.25rem;
+}
+.navbar-nav .nav-link.active {
+  position: relative;
+  color: inherit;
+}
+.navbar-nav .nav-link.active::after {
+  width: 0;
+}
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+/* End Nav  */
+
+
+
+/* Start Header  */
+#home {
+  color: var(--white-color);
+  min-height: 100vh;
+  background-image: linear-gradient(#0000009d, #0000009d), url(../imgs/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+#home .home-caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#home .home-caption h1 {
+  font-family: Montserrat-ExtraBold;
+  font-size: 3.125rem;
+}
+#home .home-caption p {
+  font-family: Montserrat-ExtraLight;
+  font-size: 1.4375rem;
+}
+#home .home-caption p:after {
+  content: " ";
+  border-right: .1875rem solid var(--white-color);
+  animation: typing 5s infinite;
+  font-family: Montserrat-Regular;
+  font-size: 1.4375rem;
+  padding-right: 1.4375rem;
+}
+#home .home-caption ul li {
+  background-color: #01090f;
+}
+@keyframes typing {
+  0% {
+    content: "D";
+  }
+
+  1% {
+    content: "De";
+  }
+
+  3% {
+    content: "Dev";
+  }
+  5% {
+    content: "Deve";
+  }
+  7% {
+    content: "Deve";
+  }
+  9% {
+    content: "Devel";
+  }
+  11% {
+    content: "Develo";
+  }
+  13% {
+    content: "Develop";
+  }
+  15% {
+    content: "Develope";
+  }
+  17% {
+    content: "Developer";
+  }
+  19% {
+    content: "Develope";
+  }
+  21% {
+    content: "Develop";
+  }
+  23% {
+    content: "Develo";
+  }
+  25% {
+    content: "Devel";
+  }
+  27% {
+    content: "Deve";
+  }
+  29% {
+    content: "Dev";
+  }
+  31% {
+    content: "De";
+  }
+  33% {
+    content: "D";
+  }
+  35% {
+    content: "De";
+  }
+  37% {
+    content: "D";
+  }
+  40% {
+    content: "D";
+  }
+  42% {
+    content: "De";
+  }
+  44% {
+    content: "Des";
+  }
+  46% {
+    content: "Desi";
+  }
+  48% {
+    content: "Desig";
+  }
+  50% {
+    content: "Design";
+  }
+  52% {
+    content: "Designe";
+  }
+  54% {
+    content: "Designer";
+  }
+  56% {
+    content: "Designe";
+  }
+  58% {
+    content: "Design";
+  }
+  60% {
+    content: "Desig";
+  }
+  62% {
+    content: "Desi";
+  }
+  64% {
+    content: "Des";
+  }
+  66% {
+    content: "De";
+  }
+  68% {
+    content: "D";
+  }
+  70% {
+    content: "";
+  }
+  71% {
+    content: "L";
+  }
+  72% {
+    content: "La";
+  }
+  73% {
+    content: "Lar";
+  }
+  74% {
+    content: "Larr";
+  }
+  75% {
+    content: "Larry";
+  }
+  76% {
+    content: "Larry ";
+  }
+  77% {
+    content: "Larry D";
+  }
+  78% {
+    content: "Larry Da";
+  }
+  79% {
+    content: "Larry Dan";
+  }
+  80% {
+    content: "Larry Dani";
+  }
+  81% {
+    content: "Larry Danie";
+  }
+  82% {
+    content: "Larry Daniel";
+  }
+  83% {
+    content: "Larry Daniels";
+  }
+  84% {
+    content: "Larry Daniel";
+  }
+  85% {
+    content: "Larry Danie";
+  }
+  86% {
+    content: "Larry Dani";
+  }
+  87% {
+    content: "Larry Dan";
+  }
+  88% {
+    content: "Larry Da";
+  }
+  89% {
+    content: "Larry D";
+  }
+  90% {
+    content: "Larry ";
+  }
+  91% {
+    content: "Larry";
+  }
+  92% {
+    content: "Larr";
+  }
+  95% {
+    content: "Lar";
+  }
+  97% {
+    content: "La";
+  }
+  99% {
+    content: "L";
+  }
+  100% {
+    content: "";
+  }
+}
+/* End Header */
+
+/* Strat About  */
+#about {
+  padding-block: var(--padding-space);
+}
+#about .img {
+  position: relative;
+}
+#about .img img {
+  position: relative;
+  z-index: 120;
+}
+#about .img .bg {
+  background-image: url(../imgs/dots.png);
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  right: 1.875rem;
+  bottom: -7%;
+}
+#about h2 {
+  font-family: Montserrat-ExtraBold;
+  font-size: 1.875rem;
+  color: var(--heading-color);
+}
+#about p:first-of-type {
+  font-size: .875rem;
+  letter-spacing: .0625rem;
+  color: var(--text-color);
+}
+#about p:last-of-type {
+  font-size: .9375rem;
+  color: var(--description-color);
+}
+#about .progress {
+  margin-block: 1.875rem;
+  --bs-progress-height: 1.5625rem;
+  --bs-progress-bar-color: #f7f7f7;
+  box-shadow: inset .0625rem .125rem .3125rem rgba(0, 0, 0, 0.4);
+}
+#about .progress-bar {
+  padding: .625rem;
+  background-color: #1c1c1c;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: .3125rem;
+  border-bottom-right-radius: .3125rem;
+  font-family: Montserrat-Medium;
+  font-size: .8125rem;
+}
+#about button {
+  border: .0625rem solid var(--black-color);
+  padding: .625rem;
+  border-radius: .3125rem;
+}
+#about button:first-of-type {
+  background-color: #1c1c1c;
+  color: var(--white-color);
+  transition: background-color 0.5s, color 0.5s;
+}
+#about button:first-of-type:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+#about button:last-of-type {
+  transition: background-color 0.5s, color 0.5s;
+}
+#about button:last-of-type:hover {
+  background-color: #1c1c1c;
+  color: var(--white-color);
+}
+/* End About  */
+
+/* Start Services  */
+#services {
+  background-color: var(--section-color);
+  padding-block: var(--padding-space);
+}
+#services .services-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#services .services-box h3 {
+  font-family: Montserrat-ExtraBold;
+  font-size: 1.125rem;
+  color: var(--heading-color);
+}
+#services .services-box:hover span {
+  background-color: #616161;
+}
+#services .services-box:hover span i {
+  color: var(--white-color);
+}
+#services span {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--form-color);
+  display: flex;
+  transition: background-color 0.3s;
+}
+#services span i {
+  margin: auto;
+  font-size: 1.875rem;
+  transition: color 0.3s;
+}
+/* End Services  */
+
+/* Start Portofolio */
+#portofolio {
+  padding-block: var(--padding-space);
+}
+#portofolio .portofolio-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portofolio .portofolio-box::after {
+  content: "";
+  width: 96%;
+  height: 96%;
+  background-color: #fdfdfd;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#portofolio .portofolio-box .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 22;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+#portofolio .portofolio-box .overlay h4 {
+  font-family: Montserrat-Bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: var(--heading-color);
+}
+#portofolio .portofolio-box .overlay ul li {
+  border: .0625rem solid var(--black-color);
+  background-color: var(--black-color);
+  color: var(--white-color);
+  transition: background-color 0.5s;
+}
+#portofolio .portofolio-box .overlay ul li a {
+  font-size: .875rem;
+  transition: color 0.5s;
+}
+#portofolio .portofolio-box .overlay ul li:hover {
+  background-color: var(--white-color);
+}
+#portofolio .portofolio-box .overlay ul li:hover a {
+  color: var(--black-color);
+}
+#portofolio .portofolio-box:hover::after {
+  opacity: 0.95;
+}
+#portofolio .portofolio-box:hover .overlay {
+  opacity: 0.95;
+}
+#portofolio .nav-tabs {
+  --bs-nav-tabs-border-width: none;
+}
+#portofolio .nav-tabs .nav-link {
+  position: relative;
+  font-family: Poppins-Bold;
+  font-size: 1rem;
+  color: var(--nav-link-color);
+}
+#portofolio .nav-tabs .nav-link:focus::after,
+.nav-tabs .nav-link.active::after {
+  content: "";
+  width: 60%;
+  height: .1875rem;
+  background-color: var(--black-color);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+}
+/* End  Portofolio */
+
+
+/* Start Clients  */
+#clients {
+  background-color: var(--section-color);
+  padding-block: var(--padding-space);
+}
+#clients .carousel-indicators [data-bs-target] {
+  background-color: #d6d6d6;
+  width: .625rem;
+  height: .625rem;
+  border-radius: 50%;
+}
+#clients .carousel-indicators .active {
+  background-color: #869791;
+}
+#clients img {
+  width: 5rem;
+  border-radius: 50%;
+}
+#clients p {
+  padding-block: .625rem;
+  font-size: .9375rem;
+  color: var(--description-color);
+  line-height: 1.5rem;
+}
+#clienst h4,
+#clients span {
+  font-family: Montserrat-SemiBold;
+}
+#clients h4 {
+  font-size: 1rem;
+  color: var(--heading-color);
+}
+#clients span {
+  font-size: .75rem;
+  color: rgb(136, 136, 136);
+}
+/* End Clients  */
+
+/* Start Counter  */
+#counter {
+  padding-block: var(--padding-space);
+}
+#counter h5,
+#counter h6 {
+  color: var(--heading-color);
+  font-size: 1.875rem;
+}
+#counter h6 {
+  font-family: Montserrat-Black;
+}
+#counter p {
+  font-family: Poppins-SemiBold;
+  font-size: .9375rem;
+  color: var(--description-color);
+}
+/* End Counter  */
+
+/* Start Team */
+#team {
+  padding-block: var(--padding-space);
+  background-color: var(--section-color);
+}
+#team .team-img .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: var(--white-color);
+  width: 97%;
+  height: 97%;
+  top: 1%;
+  left: 2%;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: transform 0.5s, opacity 0.5s;
+}
+#team .team-img {
+  cursor: pointer;
+}
+#team .team-img img {
+  transition: transform 0.5s;
+}
+#team .team-img:hover img {
+  transform: scale(1.2);
+}
+#team .team-img:hover .overlay {
+  transform: rotatey(180deg);
+  opacity: 0.95;
+}
+
+#team .team-img .overlay ul li {
+  transform: rotatey(-180deg);
+  display: flex;
+  background-color: var(--black-color);
+  border: .0625rem solid var(--black-color);
+  color: var(--white-color);
+  transition: background-color 0.5s;
+}
+#team .team-img .overlay ul li:hover {
+  background-color: var(--white-color);
+}
+#team .team-img .overlay ul li:hover a {
+  color: var(--black-color);
+}
+#team .team-img .overlay ul li a {
+  font-size: 1.25rem;
+  transition: color 0.5s;
+}
+#team .caption {
+  color: var(--white-color);
+  background-color: #5b5b5b;
+  padding: 1.25rem .9375rem;
+}
+#team .caption h6 {
+  font-family: Montserrat-Medium;
+  font-size: 1.5625rem;
+}
+#team .caption p {
+  font-family: Montserrat-Bold;
+  font-size: 1.25rem;
+}
+/* End Team */
+
+/* Start Contact  */
+#contact {
+  padding-block: var(--padding-space);
+}
+#contact .contact-means {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact span:first-of-type {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background-color: var(--form-color);
+  display: flex;
+  transition: background-color 0.5s;
+}
+#contact span:first-of-type:hover {
+  background-color: rgb(28, 28, 28);
+}
+#contact span:first-of-type:hover i {
+  color: var(--form-color);
+}
+#contact span i {
+  color: var(--heading-color);
+  font-size: 1.5625rem;
+  margin: auto;
+  transition: color 0.5s;
+}
+#contact .contact-means h6 {
+  color: var(--heading-color);
+  font-family: Montserrat-Bold;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+}
+#contact .contact-means p {
+  font-size: .9375rem;
+  color: var(--description-color);
+}
+#contact .form-control {
+  border-color: transparent;
+  background-color: var(--form-color);
+  padding: .625rem;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+#contact form input {
+  display: block !important;
+  margin-top: .625rem;
+}
+#contact form input::placeholder {
+  color: var(--heading-color);
+  font-size: .875rem;
+}
+#contact form textarea {
+  resize: vertical;
+}
+#contact form button {
+  background-color: var(--bg-footer-color);
+  padding: .625rem 2.1875rem;
+  border: .0625rem solid var(--black-color);
+  color: var(--white-color);
+  font-size: .8125rem;
+  transition: background-color 0.5s, color 0.5s;
+}
+#contact form button:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+/* End Contact  */
+
+/* Start Footer  */
+footer {
+  padding-block: .9375rem;
+  background-color: var(--bg-footer-color);
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  font-size: .8125rem;
+  color: var(--description-color);
+}
+/* End Footer  */
