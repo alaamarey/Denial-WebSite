@@ -48,3 +48,26 @@ git clone (https://github.com/alaamarey/Denial-WebSite.git)
 cd your-repo-name
 
 # Open index.html in your browser
+
+
+
+project-folder/
+│
+├── index.html
+├── css/
+│   └── all.min.css
+│   └── bootstrap.min.css
+│   └── media.css
+│   └── style.css
+├── js/
+|  └── bootstrap.bundle.min.js
+├── webfonts/
+|      └── ....
+├── fonts/
+|   └── ....
+└── images/
+    └── ...
+
+
+If you like this project, please ⭐ star the repo and share your feedback!
+I'm open to suggestions and improvements 😊
