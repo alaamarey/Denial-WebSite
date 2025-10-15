@@ -17,7 +17,7 @@ This project focuses on front-end layout, responsive design, and modern web styl
 
 ## 🚀 Live Demo
 
-🔗 [View Website](https://denialwebsite.netlify.app/)  
+🔗 [View Website](./denialHomeImage.jpg)  
 ---
 
 ## 🧰 Technologies Used
@@ -32,7 +32,7 @@ This project focuses on front-end layout, responsive design, and modern web styl
 ## 📸 Screenshots
 
 
-![Website Preview](./imgs/denialHomeImage.jpg)
+![Website Preview](./denialHomeImage.jpg)
 
 ---
 
