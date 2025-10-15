@@ -36,6 +36,22 @@ This project focuses on front-end layout, responsive design, and modern web styl
 
 ---
 
+
+
+
+## ⚙️ How to Use Locally
+
+You can clone and run this project on your local machine:
+
+```bash
+# Clone this repository
+git clone (https://github.com/alaamarey/Denial-WebSite.git)
+
+# Go into the folder
+cd your-repo-name
+
+# Open index.html in your browser
+
 📁 Project Structure
 project-folder/
 │
@@ -53,20 +69,6 @@ project-folder/
 |   └── ....
 └── images/
     └── ...
-
-
-## ⚙️ How to Use Locally
-
-You can clone and run this project on your local machine:
-
-```bash
-# Clone this repository
-git clone (https://github.com/alaamarey/Denial-WebSite.git)
-
-# Go into the folder
-cd your-repo-name
-
-# Open index.html in your browser
 
 
 
