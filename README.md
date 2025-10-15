@@ -32,7 +32,7 @@ This project focuses on front-end layout, responsive design, and modern web styl
 ## 📸 Screenshots
 
 
-![Homepage Screenshot](./imgs/denialHomeImage.jpg)
+![Website Preview](./imgs/denialHomeImage.jpg)
 
 ---
 
@@ -42,7 +42,7 @@ You can clone and run this project on your local machine:
 
 ```bash
 # Clone this repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone (https://github.com/alaamarey/Denial-WebSite.git)
 
 # Go into the folder
 cd your-repo-name
