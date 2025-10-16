@@ -31,7 +31,7 @@ This project focuses on front-end layout, responsive design, and modern web styl
 ## 📸 Screenshots
 
 
-![Website Preview](https://denial-web-site.vercel.app/)
+![Website Preview](./denialHomeImage.jpg)
 
 ---
 
